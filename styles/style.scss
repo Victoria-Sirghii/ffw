@@ -1,0 +1,197 @@
+$primaryGreen: #00a650;
+$primaryRose: #ff7fc2;
+$primaryBlue: #006dfe;
+$primaryOrange: #ff530e;
+$primaryGray: #c1c9de;
+$borderRadius: 0.5em;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+  width: 65%;
+  margin: 0 auto;
+  @media screen and (max-width: 767px) {
+    width: 95%;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2em 2em 1em 2em;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  p{
+    font-size: 2em;
+    font-weight: 600;
+    @media screen and (max-width: 767px) {
+      font-size: 1.2em;
+    }
+  }
+  .tabs{
+    text-transform: uppercase;
+    color: $primaryGray;
+    list-style-type: none;
+    font-size: 1em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    .tab:hover, .tab.active{
+      color: $primaryOrange;
+    }
+  }
+  .tab{
+    margin-left: 1.2em;
+    @media screen and (max-width: 767px) {
+      margin: 0;
+      padding: 1em;
+    }
+  }
+  
+}
+
+#my-fonts{
+  .montserrat{
+    text-align: center;
+    padding: 2em;
+  }
+}
+
+#buy-fonts{
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 2em;
+    @media screen and (max-width: 767px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+  }
+  .grid .box1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  .font-box{
+    margin: 20px;
+    font-weight: 600;
+  }
+
+  .box2, .box3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .border{
+    border: 1px solid black;
+    width: 5.6em;
+    height: 5.6em;
+    border-radius: 0.8em;
+    .color-box{
+      width: 5em;
+      height: 5em;
+      margin: 0.28em;
+      border-radius: 0.8em;
+      position: relative;
+      bottom: 0px;
+      left: -1px;
+
+    }
+  }
+  .border-green{
+    width: 7.47em;
+    height: 7.47em;
+    @media screen and (max-width: 767px) {
+      width: 5.6em;
+      height: 5.6em;
+    }
+
+  }
+  .color-box.green-box{
+    width: 6.9em;
+    height: 6.9em;
+    position: relative;
+    bottom: 0px;
+    left: -1px;
+    @media screen and (max-width: 767px) {
+      width: 5em;
+      height: 5em;
+    }
+    .letter{
+      top: 59px;
+      font-size: 38px;
+      left: 14px;
+      @media screen and (max-width: 767px) {
+        position: relative;
+        top: 44px;
+        left: 7px;
+        font-size: 29px;
+      }
+    }
+    
+  }
+  
+  .box1 .color-box{
+    background-color: $primaryGreen;
+  }
+  .box2 .color-box{
+    background-color: $primaryRose;
+  }
+  .box3 .color-box{
+    background-color: $primaryBlue;
+  }
+  .letter{
+    position: relative;
+    top: 44px;
+    left: 7px;
+    font-weight: bold;
+    font-size: 29px;
+    color: lightgrey;
+    opacity: 0.4;
+  }
+  .col2{
+    margin-left: 2em;
+
+  }
+  .col1{
+    margin-top: 2em;
+    @media screen and (max-width: 767px) {
+      margin-top: 0em;
+      margin-left: 2em;
+    }
+  }
+}
+
+.changeOpacity{
+  opacity: 0.5;
+}
+
+[data-tab-content]{
+  display: none;
+  border: 3px solid $primaryGray;
+  border-radius:  $borderRadius;
+  
+}
+
+.active[data-tab-content]{
+  display: block;
+}
+
+

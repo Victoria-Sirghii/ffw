@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Front-end test project</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="test.js" defer></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <p>Please select one font</p>
+      <ul class="tabs">
+        <li data-tab-target="#my-fonts" class="tab" >My fonts</li>
+        <li data-tab-target="#buy-fonts" class="active tab">Buy fonts</li>
+      </ul>
+    </header>
+    <main class="tab-content">
+      <div id="my-fonts" data-tab-content>
+        <h4 class="montserrat">My font is Montserrat from Google Fonts</h4>
+      </div>
+      <div id="buy-fonts" data-tab-content class="active">
+        <div class="grid">
+          <div class="font-box box1">
+            <div class="border border-green">
+              <div class="color-box green-box">
+                <div class="letter">M</div>
+              </div>
+            </div>
+            <div class="radio-btn col1" onclick="changeOpacity()">
+              <input type="radio" id="merri" name="font" value="merri">
+              <label for="merri">Merriweather project is led by Sorkin Type</label>
+           </div>
+          </div>
+          <div class="font-box box2">
+            <div class="border">
+              <div class="color-box">
+                <div class="letter">R</div>
+              </div>
+            </div>
+            <div class="radio-btn col2" onclick="changeOpacity()">
+              <input type="radio" id="roboto" name="font" value="roboto">
+              <label for="roboto">Roboto doesn't compromise, allowing letters</label>
+            </div>
+          </div>
+          <div class="font-box box3">
+            <div class="border">
+              <div class="color-box">
+                <div class="letter">NS</div>
+              </div>
+            </div>
+            <div class="radio-btn col2" onclick="changeOpacity()">
+              <input type="radio" id="noto" name="font" value="noto">
+              <label for="noto">Noto Sans covers over 30 scrupts</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
