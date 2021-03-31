@@ -13,10 +13,10 @@ $borderRadius: 0.5em;
 }
 
 .container{
-  width: 65%;
+  width: 630px;
   margin: 0 auto;
   @media screen and (max-width: 767px) {
-    width: 95%;
+    width: 80%;
   }
 }
 
@@ -30,7 +30,7 @@ header {
     align-items: center;
   }
   p{
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 600;
     @media screen and (max-width: 767px) {
       font-size: 1.2em;
@@ -40,7 +40,7 @@ header {
     text-transform: uppercase;
     color: $primaryGray;
     list-style-type: none;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: bold;
     display: flex;
     flex-direction: row;
